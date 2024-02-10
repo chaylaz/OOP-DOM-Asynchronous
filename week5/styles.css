@@ -1,0 +1,48 @@
+body {
+    font-family: sans-serif;
+  }
+  
+  .container {
+    width: 800px;
+    margin: 0 auto;
+  }
+  
+  .tabs {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .tab {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .tab.active {
+    background-color: #ccc;
+  }
+  
+  .tabcontent {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #table-pendaftar {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  #table-pendaftar th, #table-pendaftar td {
+    border: 1px solid #ccc;
+    padding: 5px;
+  }
+  
+  #resume {
+    margin-top: 10px;
+  }
+  
+  

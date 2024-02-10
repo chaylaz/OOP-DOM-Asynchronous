@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrasi</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            margin-top: 0;
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        .error-message {
+            color: red;
+            margin-top: -10px;
+            margin-bottom: 10px;
+        }
+    </style>
+    </head>
+    <body>
+    
+    <div class="container">
+        <h2>Registrasi</h2>
+        <form id="registration-form">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" placeholder="Masukkan nama Anda (minimal 10 karakter)" required minlength="10">
+            <div class="error-message" id="name-error"></div>
+    
+            <label for="age">Umur:</label>
+            <input type="number" id="age" name="age" placeholder="Masukkan umur Anda (minimal 25 tahun)" required min="25">
+            <div class="error-message" id="age-error"></div>
+    
+            <label for="money">Uang Sangu:</label>
+            <input type="number" id="money" name="money" placeholder="Masukkan uang sangu Anda (minimal 100 ribu, maksimal 1 juta)" required min="100000" max="1000000">
+            <div class="error-message" id="money-error"></div>
+    
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    
+    </body>
+    </html>
